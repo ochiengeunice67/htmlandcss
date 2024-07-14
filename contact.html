@@ -22,14 +22,33 @@
     </nav>
     <div class="main">
       <div class="contact">
-        <form action="">
-          <label for="name">Name</label>
-          <input type="name" for="name" />
+        <form id="contactForm">
+          <h1>Contact Us</h1>
+
+          <label for="fname">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your first name"
+            required
+          />
+
           <label for="email">Email</label>
-          <input type="email" for="email" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your last name"
+            required
+          />
+          <label for="message">Enter Your Message</label>
+          <textarea placeholder="type..." rows="6" name="message" id="message" ></textarea>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </div>
+    <script src="js/formValidation.js"></script>
   </body>
   <footer class="footer">
     <p>Author: Eunice Ochieng</p>
